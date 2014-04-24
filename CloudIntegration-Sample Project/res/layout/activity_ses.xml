@@ -15,80 +15,57 @@
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="36dp"
         android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/start_session_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="startSession"
+            android:text="Start Session" />
+
+        <Button
+            android:id="@+id/end_session_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="endSession"
+            android:text="End Session" />
+
+        <Button
+            android:id="@+id/pause_session_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="pauseSession"
+            android:layout_marginBottom="20dp"
+            android:text="Pause Session" />
+
+        <Button
+            android:id="@+id/record_custom_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="recordCustomer"
+            android:text="Record customer" />
+
+        <Button
+            android:id="@+id/record_event_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="recordEvent"
+            android:text="Record event" />
+
+        <Button
+            android:id="@+id/register_device_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="registerDevice"
+            android:text="Register Device" />
+
+        <Button
+            android:id="@+id/check_update_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkUpdate"
+            android:text="Check Update" />
     </LinearLayout>
-    
-    <Button
-        android:id="@+id/record_custom_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/record_event_btn"
-        android:layout_centerHorizontal="true"
-        android:onClick="recordCustomer"
-        android:text="Record customer" />
-    
-    <Button
-        android:id="@+id/record_event_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/check_update_btn"
-        android:layout_alignLeft="@+id/check_update_btn"
-        android:onClick="recordEvent"
-        android:text="Record event" />
-
-    <Button
-        android:id="@+id/check_update_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="22dp"
-        android:onClick="checkUpdate"
-        android:text="Check Update" />
-
-    <Button
-        android:id="@+id/pause_session_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/end_session_btn"
-        android:layout_centerHorizontal="true"
-        android:onClick="pauseSession"
-        android:text="Pause Session" />
-
-    <Button
-        android:id="@+id/start_session_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/end_session_btn"
-        android:layout_below="@+id/log_enable_btn"
-        android:layout_marginTop="53dp"
-        android:onClick="startSession"
-        android:text="Start Session" />
-
-    <Button
-        android:id="@+id/end_session_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/record_event_btn"
-        android:layout_below="@+id/start_session_btn"
-        android:onClick="endSession"
-        android:text="End Session" />
-
-    <Button
-        android:id="@+id/register_device_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/record_custom_btn"
-        android:layout_below="@+id/log_enable_btn"
-        android:onClick="registerDevice"
-        android:text="Register Device" />
-
-    <Button
-        android:id="@+id/log_enable_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/linearLayout1"
-        android:layout_centerHorizontal="true"
-        android:onClick="logStart"
-        android:text="Log Start" />
 
 </RelativeLayout>

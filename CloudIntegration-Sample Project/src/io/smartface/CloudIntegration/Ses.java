@@ -13,7 +13,7 @@ import android.view.Menu;
 import android.view.View;
 
 public class Ses extends Activity {
-	private String API_KEY = "qUjjupLQU0SrcqH...";
+	private String API_KEY = "YOUR_API_KEY";
 	private String SES_URL = "http://analytics.smartface.io/api/AnalyticsData/";
 	
 	@Override
@@ -31,9 +31,6 @@ public class Ses extends Activity {
 		return true;
 	}
 
-	public void logStart(View v){
-		SESClient.setLoggingEnabled(true);
-	}
 	
 	public void registerDevice(View v){
 		SESClient.registerDeviceToken("MY_TOKEN");
